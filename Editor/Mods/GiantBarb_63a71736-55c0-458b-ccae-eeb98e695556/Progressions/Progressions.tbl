@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="53912403-fe14-4ce0-89aa-96acb1dee21a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_56" />
+        <field name="UUID" type="IdTableFieldDefinition" value="978fc1ff-94c4-47cb-8c11-93e080c6ef21" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="60bbcc97-5381-4898-bc15-908c072895de" />
+        <field name="FSName" type="StringTableFieldDefinition" value="Barbarian" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="0" />
+        <field name="SubClasses" type="GuidObjectListTableFieldDefinition" value="0263c7d6-5fd4-4a09-bfcf-55d5d78a0c9d" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="ActionResource(Rage,1,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_58" />
+        <field name="UUID" type="IdTableFieldDefinition" value="702fa191-9b45-480d-9846-a0a891b279ce" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="GiantPath" />
+        <field name="Level" type="ByteTableFieldDefinition" value="3" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="RageGiantsHavocUnlock" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="RageUnlock" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(56552147-38b0-41c5-ba27-89d2025bdb00,1,0,0)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f36968db-ae88-496a-8132-68ae3cec8548" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="GiantPath" />
+        <field name="Level" type="ByteTableFieldDefinition" value="6" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="ElementalCleaverUnlock" />
+        <field name="PassivesRemoved" type="StringTableFieldDefinition" value="RageGiantsHavocUnlock" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_1" />
+        <field name="UUID" type="IdTableFieldDefinition" value="6613f6dc-dc2c-4dd0-ba1f-1c6b226c2fd9" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="GiantPath" />
+        <field name="Level" type="ByteTableFieldDefinition" value="10" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="MightyImpelUnlock" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
+        <field name="UUID" type="IdTableFieldDefinition" value="4e30c2e8-b8c5-4a2a-91ff-0f6ee44f2c8f" />
+        <field name="TableUUID" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
+        <field name="FSName" type="StringTableFieldDefinition" value="GiantPath" />
+        <field name="Level" type="ByteTableFieldDefinition" value="11" />
+        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
+        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DemiurgicColossusUnlock" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

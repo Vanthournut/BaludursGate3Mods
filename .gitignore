@@ -1,0 +1,22 @@
+# Pak Files and Localization Folder
+/*.*
+/Localization
+
+# Except this file
+!.gitignore
+
+# Ignore Existing Files in Remaining Directories
+Editor/*
+!Editor/Mods
+Editor/Mods/*
+
+Generated/Public/*
+
+Mods/*
+
+Projects/*
+
+Public/*
+
+# Allow My Mod Files
+!/**/GiantBarb_63a71736-55c0-458b-ccae-eeb98e695556

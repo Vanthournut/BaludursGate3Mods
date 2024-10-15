@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="MergedInto" type="guid" value="b8faf12f-ca42-45c0-84f8-6951b526182a"/>
+                    <attribute id="Name" type="FixedString" value="Druidcraft"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Druidcraft"/>
+                    <attribute id="UUID" type="guid" value="b2437f60-ff5b-4ef1-a59a-06e53fc6c816"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="GiantBarbCantrips"/>
+                    <attribute id="Spells" type="LSString" value="Shout_Druidcraft;Shout_Thaumaturgy"/>
+                    <attribute id="UUID" type="guid" value="56552147-38b0-41c5-ba27-89d2025bdb00"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

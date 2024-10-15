@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c75b1787-58d1-4696-8d05-4acbda82eda1">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d07ca364-b615-4bea-81bd-da915d9fa5a0" />
+        <field name="Name" type="NameTableFieldDefinition" value="Mighty_Impel" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5cce39b4-8be9-46d3-86b3-ed1fa836d336" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:DealDamage(0,Bludgeoning);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(0,Bludgeoning);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Character()" />
+        <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" value="SpellAutoResolveOnAlly(Ability.Strength, SourceSpellDC(10, context.Source, Ability.Strength), true)" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(not Ally()):ApplyStatus(PRONE,100,1);ApplyStatus(MIGHTY_IMPEL_DAMAGE_NEGATION,100,1);" />
+        <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not Grounded() and (Character() or Dead()) and CanMove(context.Target, context.Source, false) and not Tagged('CANT_SHOVE_THROW') and not SizeEqualOrGreater(context.Source.Size)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedThrow" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h442771a6ga653g139cgff4cg3453b64b0251" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe853ee2g6821g5a55g55ecg4e179b8d10b8" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;AbortOnSecondarySpellRollFail;AddFallDamageOnLand;CombatLogSetSingleLineRoll" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

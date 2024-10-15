@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="53a99cd9-fd7a-4e34-b23c-241ccb0b3720" />
+        <field name="Name" type="NameTableFieldDefinition" value="Druidcraft" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="e557c52b-a468-4a6e-87c3-cc981f5605e6" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRUIDCRAFT,100,10)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Goodberry" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92a198c3g2f4cg5332g08b1g5e33361b57d1" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha588345dg509fge9c1g30f8gee5e703c3085" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUIDCRAFT,100,10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5781ec85-5505-4a3b-8914-956fa376d015" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="87c0b5f9-8dc4-45fd-a036-63bf1ed5d13d" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35d10908gf602ga4e5gd74dg4ec1314a96fa" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10)" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3043d2b4-be29-47f4-b656-1822d3132d83" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Container" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5781ec85-5505-4a3b-8914-956fa376d015" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Rage_GiantsHavoc_Fire;Shout_Rage_GiantsHavoc_Acid;Shout_Rage_GiantsHavoc_Cold;Shout_Rage_GiantsHavoc_Thunder;Shout_Rage_GiantsHavoc_Lightning;" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc5e7dc93g03d0gf20dg58cag12ea7bf992d4" version="2" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5781ec85-5505-4a3b-8914-956fa376d015" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_GiantsHavoc_Container" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cddb368gbe4fg7bd3gf470gc87737602958" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="0" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="eb8c7fbd-a0ad-4747-807b-f1a9c384c69e" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8629f404g6b61gc4b3gac06g62a8ff101ccb" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ddde45a7-be29-49ca-875b-437c99e54b67" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9549747gbbe8gc778g3765ga0cbfc9dafe9" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d85c7261-5880-4058-ae7c-b27b3746d030" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Thunder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6aa2535egf7dcg2157g27dfg177404e1cd60" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc0b19de-f607-4ef6-a289-e3d19202d169" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20b7104g42e4ge1a3g0499g3736c3929535" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ca501ce7-f739-4875-b328-c70b2c720bee" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="0010f85a-8d1d-4a66-aaa6-b8cbef2489d5" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Elemental_Cleaver_Fire;Shout_Elemental_Cleaver_Acid;Shout_Elemental_Cleaver_Cold;Shout_Elemental_Cleaver_Thunder;Shout_Elemental_Cleaver_Lightning;" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haeb10cecg8674g5ee8g3026gbd1690f9dd15" version="1" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC')" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Fire" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="fc002684-0882-41a3-916c-bbb06fa5dae2" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Elemental_Cleaver" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha82a3063g31b4g3facga5d7g06aa056acc09" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h596f9b97g0884g4b59gdd5bgcd229afb4c72" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE_WEAPON,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="10a492af-1994-497f-8a29-4dc7b63263ec" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
+        <field name="Level" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellSchool" version="1" />
+        <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Elemental_Cleaver" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hedc1c85dg53a0g148bgb93egc384e61affbd" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Acid" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Acid_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Item_ChromaticAttunementAcid" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Item_ChromaticAttunementAcid" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="803e65f9-b27c-4e9c-af2a-8cf0e8e8564d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="dfb57578-dafa-4c39-9f6e-238b9e2c237d" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89018ece-411e-4c00-94ec-6cb3743f4af5" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bc50bcb0-c0ab-43d2-a047-c7aedeaa4d08" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4434067g904dga47cgb43dgc10380420d1d" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Cold" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Cold_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Item_ChromaticAttunementCold" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Item_ChromaticAttunementCold" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="743b0439-4d13-4988-acd3-43318fb97536" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="43efb4cc-023f-43c6-91a1-9383d754f31a" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="37848e95-b5cb-4184-a3c2-33780787694d" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b30ef0da-ba25-4b67-9d87-536ca29d11ed" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Thunder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he7e15dd8g37d0g1763gad7cgb9014d493efc" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Thunder" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Thunder_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Item_ChromaticAttunementThunder" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Item_ChromaticAttunementThunder" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9b6f51df-22cc-49cf-9ae9-a0e0ac0f8882" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bfeec9c4-0287-4a24-a104-b2ae38d85b4f" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5e3997ae-d2f5-4b97-96e3-c987e6b9584d" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="82bc8248-0c61-41a0-b454-f260de93e2b6" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d079ceagb5cag7e6egbd8aga58c2a1d13c6" version="1" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
+        <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Lighting" />
+        <field name="PrepareLoopSound" type="StringTableFieldDefinition" value="Spell_Prepare_Damage_Lightning_Gen_L1to3_Loop" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_Item_ChromaticAttunementLightning" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Action_Impact_Item_ChromaticAttunementLightning" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="460e98c4-4e94-47b9-bd21-75088d0d8e52" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="da768bec-1f51-4d6f-8617-a3a6c2c01a58" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="7547b944-e3e5-4b6d-b2e9-8320425b4f12" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

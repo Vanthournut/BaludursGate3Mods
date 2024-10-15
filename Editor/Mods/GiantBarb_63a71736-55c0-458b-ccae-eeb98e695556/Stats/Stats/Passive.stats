@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4fc8258d-0e36-41c6-a1e4-606e95ecc68c" />
+        <field name="Name" type="NameTableFieldDefinition" value="RageGiantsHavocUnlock" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a85ab313-6b4b-4d76-903c-23d30566ab0e" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Rage_GiantsHavoc)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate;OnLongRest;OnCombatStarted" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="not SizeEqualOrGreater(Size.Medium,context.Source) and not HasStatus('REDUCE',context.Source) and not HasStatus('SG_Polymorph',context.Source) and not HasStatus('RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL',context.Source)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8af84c51-35e2-42e9-8443-eb2ae781c822" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_Rage_Boosts" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd5c65888g614eg0183gf091gb9b9b1a2c1b9" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="he0eb07fag3e5bgc1bbg8773g84bc12e97061" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Ability, Strength); Advantage(SavingThrow, Strength); Resistance(Slashing, Resistant); Resistance(Piercing, Resistant); Resistance(Bludgeoning, Resistant); IF(IsAttackType(AttackType.MeleeWeaponAttack)): CharacterWeaponDamage(LevelMapValue(RageDamage));IF(IsAttackType(AttackType.RangedUnarmedAttack)): CharacterWeaponDamage(LevelMapValue(RageDamage));IF(IsAttackType(AttackType.MeleeOffHandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));FallDamageMultiplier(0.5)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Frenzy" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3e00898d-a0b1-448a-b911-f29969f1d368" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_Giants_Havoc_Reach" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9eeae801g96begcb49gc17cg1a931021b712" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91f7555cg7b86gfebdgf307g0c7a29afea8e" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="996c672e-896d-4279-972c-bfa96d8a6c59" />
+        <field name="Name" type="NameTableFieldDefinition" value="ElementalCleaverUnlock" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Rage_GiantsHavoc_Container);UnlockSpell(Shout_Elemental_Cleaver);" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="4fc8258d-0e36-41c6-a1e4-606e95ecc68c" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="256f9273-3099-40fe-88b0-45329abf7c39" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Throwing_Technical" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Throw_Throw')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THROWING_TECHNICAL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="42866696-f270-464f-984f-f5e61fa73ec5" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Fire" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h89c0eaddgfa35gb3ddgfa5dg103afd0236ab" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasHeavyArmor(context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_FIRE_WEAPON', context.HitDescription.ThrownObject)):CharacterWeaponDamage(1d6,Fire);IF(HasStatus('ELEMENTAL_CLEAVER_FIRE_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Fire);" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Throw_Throw')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THROWING_TECHNICAL,100,1);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2f40fa0-7893-4d52-a3dc-b9f59f865b78" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Acid" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42866696-f270-464f-984f-f5e61fa73ec5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc52ed55bg0794gf6d5gf617gb149deb731f7" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_ACID_WEAPON', context.HitDescription.ThrownObject)):CharacterWeaponDamage(1d6,Acid);IF(HasStatus('ELEMENTAL_CLEAVER_ACID_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Acid);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c3d01e9a-cd2e-4826-9ab6-a0d72f5e1516" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Cold" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42866696-f270-464f-984f-f5e61fa73ec5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha20f2831g2230g0ae0g4a0dgf50a1a912a5c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_COLD_WEAPON', context.HitDescription.ThrownObject)):CharacterWeaponDamage(1d6,Cold);IF(HasStatus('ELEMENTAL_CLEAVER_COLD_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Cold);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="905a519c-7b7e-4166-838a-46a5b3f119db" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Thunder" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42866696-f270-464f-984f-f5e61fa73ec5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h553e9f8ag6a45g0c8dgf2f9g307bbc85e2a0" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_THUNDER_WEAPON', context.HitDescription.ThrownObject)):CharacterWeaponDamage(1d6,Thunder);IF(HasStatus('ELEMENTAL_CLEAVER_THUNDER_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Thunder);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e294d3c2-7462-41b0-9142-3309ecdc13fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Lightning" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="42866696-f270-464f-984f-f5e61fa73ec5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h67b996c1g17a6ge0c1g7cb9gfa0f52122020" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_WEAPON', context.HitDescription.ThrownObject)):CharacterWeaponDamage(1d6,Lightning);IF(HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Lightning);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b50f268-d4f1-4b15-bfa3-42d5ceca8f3f" />
+        <field name="Name" type="NameTableFieldDefinition" value="MightyImpelUnlock" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Throw_Mighty_Impel)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2772f89a-fea7-4589-a400-dc568bef70b5" />
+        <field name="Name" type="NameTableFieldDefinition" value="MightyImpelDamageNegation" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdfc9cb9cged5eg4159g7881g6a789fb27533" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h400197eeg2460g4c33g0bd5ga159af3740af" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Throw" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged;OnDamagedPrevented" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MIGHTY_IMPEL_DAMAGE_NEGATION);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ed046be3-c46d-43d4-9c97-5e7b2d1787e3" />
+        <field name="Name" type="NameTableFieldDefinition" value="DemiurgicColossusUnlock" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_Frenzy" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC',context.Source) and not HasStatus('DEMIURGIC_COLOSSUS')" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(DEMIURGIC_COLOSSUS,100,-1)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6a816bd1-d07d-4486-9e23-fb5922055344" />
+        <field name="Name" type="NameTableFieldDefinition" value="DemiurgicColossusCleaverUpgrade" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdff3339eg1467g62b8g7ff0gd0453fc16cd5" version="1" />
+        <field name="BoostContext" type="EnumerationListTableFieldDefinition" value="OnEquip;OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="BoostConditions" type="StringTableFieldDefinition" value="not HasHeavyArmor(context.Source)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_FIRE_WEAPON', context.HitDescription.ThrownObject) or HasStatus('ELEMENTAL_CLEAVER_FIRE_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Fire);IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_ACID_WEAPON', context.HitDescription.ThrownObject) or HasStatus('ELEMENTAL_CLEAVER_ACID_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Acid);IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_COLD_WEAPON', context.HitDescription.ThrownObject) or HasStatus('ELEMENTAL_CLEAVER_COLD_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Cold);IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_THUNDER_WEAPON', context.HitDescription.ThrownObject) or HasStatus('ELEMENTAL_CLEAVER_THUNDER_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Thunder); IF(IsAttackType(AttackType.RangedUnarmedAttack) and HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_WEAPON', context.HitDescription.ThrownObject) or HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_WEAPON', GetAttackWeapon())):CharacterWeaponDamage(1d6,Lightning);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

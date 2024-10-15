@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3f5063e7-e02b-4849-a503-9ba01dc6e2e6">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b2437f60-ff5b-4ef1-a59a-06e53fc6c816" />
+        <field name="Name" type="NameTableFieldDefinition" value="Druidcraft" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Druidcraft" />
+        <field name="MergedInto" type="GuidObjectTableFieldDefinition" value="b8faf12f-ca42-45c0-84f8-6951b526182a" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="56552147-38b0-41c5-ba27-89d2025bdb00" />
+        <field name="Name" type="NameTableFieldDefinition" value="GiantBarbCantrips" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_Druidcraft;Shout_Thaumaturgy" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
