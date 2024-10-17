@@ -99,7 +99,7 @@ data "DisplayName" "haeb10cecg8674g5ee8g3026gbd1690f9dd15;1"
 data "UseCosts" "BonusActionPoint:1"
 data "SpellStyleGroup" "Class"
 data "SpellFlags" "IsLinkedSpellContainer"
-data "RequirementConditions" "HasStatus('RAGE_GIANTS_HAVOC')"
+data "RequirementConditions" "HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))"
 data "MemoryCost" ""
 
 new entry "Shout_Elemental_Cleaver_Fire"
@@ -120,6 +120,7 @@ data "TooltipStatusApply" "ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);Appl
 data "UseCosts" "BonusActionPoint:1"
 data "SpellStyleGroup" "Class"
 data "SpellFlags" ""
+data "RequirementConditions" "HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))"
 data "MemoryCost" ""
 
 new entry "Shout_Elemental_Cleaver_Acid"

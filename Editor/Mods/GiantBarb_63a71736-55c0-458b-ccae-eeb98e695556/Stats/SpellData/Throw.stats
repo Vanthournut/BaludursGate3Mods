@@ -18,10 +18,11 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h442771a6ga653g139cgff4cg3453b64b0251" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe853ee2g6821g5a55g55ecg4e179b8d10b8" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;AbortOnSecondarySpellRollFail;AddFallDamageOnLand;CombatLogSetSingleLineRoll" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;AbortOnSecondarySpellRollFail;AddFallDamageOnLand" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC')" />
       </fields>
     </stat_object>
   </stat_objects>

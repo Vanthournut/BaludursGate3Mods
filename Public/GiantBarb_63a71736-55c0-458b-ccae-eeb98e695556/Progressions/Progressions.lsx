@@ -10,7 +10,7 @@
                     <attribute id="Name" type="LSString" value="Barbarian"/>
                     <attribute id="ProgressionType" type="uint8" value="0"/>
                     <attribute id="TableUUID" type="guid" value="60bbcc97-5381-4898-bc15-908c072895de"/>
-                    <attribute id="UUID" type="guid" value="978fc1ff-94c4-47cb-8c11-93e080c6ef21"/>
+                    <attribute id="UUID" type="guid" value="82b5e577-2e61-4262-b94c-51886e757f17"/>
                     <children>
                         <node id="SubClasses">
                             <children>
@@ -47,14 +47,6 @@
                     <attribute id="ProgressionType" type="uint8" value="1"/>
                     <attribute id="TableUUID" type="guid" value="967736f2-1233-4266-951e-e2c3906fc12c"/>
                     <attribute id="UUID" type="guid" value="6613f6dc-dc2c-4dd0-ba1f-1c6b226c2fd9"/>
-                </node>
-                <node id="Progression">
-                    <attribute id="Level" type="uint8" value="11"/>
-                    <attribute id="Name" type="LSString" value="GiantPath"/>
-                    <attribute id="PassivesAdded" type="LSString" value="DemiurgicColossusUnlock"/>
-                    <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="TableUUID" type="guid" value="967736f2-1233-4266-951e-e2c3906fc12c"/>
-                    <attribute id="UUID" type="guid" value="4e30c2e8-b8c5-4a2a-91ff-0f6ee44f2c8f"/>
                 </node>
             </children>
         </node>

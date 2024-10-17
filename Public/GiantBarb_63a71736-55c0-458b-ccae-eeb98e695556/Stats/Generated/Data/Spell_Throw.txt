@@ -16,6 +16,7 @@ data "DisplayName" "h442771a6ga653g139cgff4cg3453b64b0251;1"
 data "Description" "hfe853ee2g6821g5a55g55ecg4e179b8d10b8;1"
 data "UseCosts" "BonusActionPoint:1"
 data "SpellStyleGroup" "Class"
-data "SpellFlags" "RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;AbortOnSecondarySpellRollFail;AddFallDamageOnLand;CombatLogSetSingleLineRoll"
+data "SpellFlags" "RangeIgnoreVerticalThreshold;IgnoreSilence;IgnoreVisionBlock;AbortOnSecondarySpellRollFail;AddFallDamageOnLand"
+data "RequirementConditions" "HasStatus('RAGE_GIANTS_HAVOC')"
 data "DamageType" "None"
 

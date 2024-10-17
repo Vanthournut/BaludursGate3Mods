@@ -117,7 +117,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="haeb10cecg8674g5ee8g3026gbd1690f9dd15" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC')" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
@@ -143,6 +143,7 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

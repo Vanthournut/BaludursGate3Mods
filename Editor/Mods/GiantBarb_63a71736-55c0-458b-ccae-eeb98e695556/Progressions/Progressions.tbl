@@ -4,7 +4,7 @@
     <stat_object is_substat="false">
       <fields>
         <field name="Name" type="NameTableFieldDefinition" value="New_Stat_56" />
-        <field name="UUID" type="IdTableFieldDefinition" value="978fc1ff-94c4-47cb-8c11-93e080c6ef21" />
+        <field name="UUID" type="IdTableFieldDefinition" value="82b5e577-2e61-4262-b94c-51886e757f17" />
         <field name="TableUUID" type="GuidTableFieldDefinition" value="60bbcc97-5381-4898-bc15-908c072895de" />
         <field name="FSName" type="StringTableFieldDefinition" value="Barbarian" />
         <field name="Level" type="ByteTableFieldDefinition" value="3" />
@@ -47,17 +47,6 @@
         <field name="Level" type="ByteTableFieldDefinition" value="10" />
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="MightyImpelUnlock" />
-      </fields>
-    </stat_object>
-    <stat_object is_substat="false">
-      <fields>
-        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_2" />
-        <field name="UUID" type="IdTableFieldDefinition" value="4e30c2e8-b8c5-4a2a-91ff-0f6ee44f2c8f" />
-        <field name="TableUUID" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
-        <field name="FSName" type="StringTableFieldDefinition" value="GiantPath" />
-        <field name="Level" type="ByteTableFieldDefinition" value="11" />
-        <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
-        <field name="PassivesAdded" type="StringTableFieldDefinition" value="DemiurgicColossusUnlock" />
       </fields>
     </stat_object>
   </stat_objects>
