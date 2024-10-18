@@ -17,6 +17,7 @@ data "Icon" "Spell_Transmutation_Enlarge"
 data "DisplayName" "h35d10908gf602ga4e5gd74dg4ec1314a96fa;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10)"
 data "RequirementConditions" "not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')"
+data "PrepareEffect" "f6ebf162-0ad6-4378-a6ba-a00aff45e0be"
 
 new entry "Shout_Rage_GiantsHavoc_Container"
 type "SpellData"

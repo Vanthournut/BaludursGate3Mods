@@ -23,6 +23,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f6ebf162-0ad6-4378-a6ba-a00aff45e0be" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
