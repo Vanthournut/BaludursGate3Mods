@@ -44,6 +44,7 @@ data "DisplayName" "h0cddb368gbe4fg7bd3gf470gc87737602958;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);"
 data "SpellFlags" ""
 data "MemoryCost" "0"
+data "PrepareEffect" "f6796ec9-c195-4a3b-94c9-8f1baa274c6d"
 data "DamageType" "Fire"
 data "Sheathing" "Melee"
 
@@ -55,6 +56,7 @@ data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplySta
 data "Icon" "Spell_Transmutation_ElementalWeapon_Acid"
 data "DisplayName" "h8629f404g6b61gc4b3gac06g62a8ff101ccb;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);"
+data "PrepareEffect" "6d07ef19-5759-440d-a5f1-b0e463ab5935"
 data "DamageType" "Acid"
 
 new entry "Shout_Rage_GiantsHavoc_Cold"
@@ -65,6 +67,7 @@ data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplySta
 data "Icon" "Spell_Transmutation_ElementalWeapon_Cold"
 data "DisplayName" "hc9549747gbbe8gc778g3765ga0cbfc9dafe9;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);"
+data "PrepareEffect" "6566171f-6c8f-447d-a3db-9dd5ffbb5cfd"
 data "DamageType" "Cold"
 
 new entry "Shout_Rage_GiantsHavoc_Thunder"

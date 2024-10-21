@@ -56,6 +56,7 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" value="0" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f6796ec9-c195-4a3b-94c9-8f1baa274c6d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -68,6 +69,7 @@
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6d07ef19-5759-440d-a5f1-b0e463ab5935" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -80,6 +82,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9549747gbbe8gc778g3765ga0cbfc9dafe9" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6566171f-6c8f-447d-a3db-9dd5ffbb5cfd" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
