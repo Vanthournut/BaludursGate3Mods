@@ -78,6 +78,7 @@ data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplySta
 data "Icon" "Spell_Transmutation_ElementalWeapon_Thunder"
 data "DisplayName" "h6aa2535egf7dcg2157g27dfg177404e1cd60;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);"
+data "PrepareEffect" "aca575f7-1915-4d30-8330-16536863d491"
 data "DamageType" "Thunder"
 
 new entry "Shout_Rage_GiantsHavoc_Lightning"
@@ -88,6 +89,7 @@ data "SpellProperties" "AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplySta
 data "Icon" "Spell_Transmutation_ElementalWeapon_Lightning"
 data "DisplayName" "hd20b7104g42e4ge1a3g0499g3736c3929535;1"
 data "TooltipStatusApply" "ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);"
+data "PrepareEffect" "09a78edd-aadd-483e-ba68-7d4d6488ad7c"
 data "DamageType" "Lightning"
 
 new entry "Shout_Elemental_Cleaver"
