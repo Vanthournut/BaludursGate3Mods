@@ -53,7 +53,7 @@
         </component>
       </track>
       <track name="Track" muted="False" locked="False" mutestateoverride="None">
-        <component class="OverlayMaterial" start="0.3" end="2.88" instancename="3be816ca-050b-426b-b1bd-346cc34ae606">
+        <component class="OverlayMaterial" start="0.1" end="2.88" instancename="3be816ca-050b-426b-b1bd-346cc34ae606">
           <properties>
             <property id="ef1d7d1e-02b6-4548-80d9-5ef2fbcda237">
               <data>
@@ -62,7 +62,7 @@
             </property>
             <property id="035b5248-d0ca-44b7-853f-3acb84110e67">
               <data>
-                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.3,2.88" />
+                <datum platform="00000000-0000-0000-0000-000000000000" lod="00000000-0000-0000-0000-000000000000" value="0.1,2.88" />
               </data>
             </property>
             <property id="e515e7ef-81ed-4536-bab2-5a96b33bef35">
@@ -206,8 +206,8 @@
                   <rampchanneldata>
                     <rampchannel type="Linear" id="2acf47b9-3924-46f3-a7a1-b1a6cbace32a">
                       <keyframes>
-                        <keyframe time="0" value="-16724531" />
-                        <keyframe time="1" value="-4521985" />
+                        <keyframe time="0" value="-6137139" />
+                        <keyframe time="1" value="-6395649" />
                       </keyframes>
                     </rampchannel>
                   </rampchanneldata>

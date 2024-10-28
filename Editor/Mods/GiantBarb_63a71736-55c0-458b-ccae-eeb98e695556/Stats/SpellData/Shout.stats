@@ -24,6 +24,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f6ebf162-0ad6-4378-a6ba-a00aff45e0be" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d314aed0-4fb5-44dc-98c4-614297017694" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -57,6 +58,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Fire" enumeration_type_name="Damage Type" version="1" />
         <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f6796ec9-c195-4a3b-94c9-8f1baa274c6d" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="92d338f9-074f-43c0-a1c2-cfe1dabdeb93" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -70,6 +72,7 @@
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6d07ef19-5759-440d-a5f1-b0e463ab5935" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="80b282ca-770d-494c-beac-12652710343f" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -83,6 +86,7 @@
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="6566171f-6c8f-447d-a3db-9dd5ffbb5cfd" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="6696c656-68e6-496a-9ac5-5f4e19712dbb" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -95,6 +99,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6aa2535egf7dcg2157g27dfg177404e1cd60" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="aca575f7-1915-4d30-8330-16536863d491" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="f1398891-2888-4dfa-8737-8067d899939d" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -107,6 +113,8 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20b7104g42e4ge1a3g0499g3736c3929535" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="09a78edd-aadd-483e-ba68-7d4d6488ad7c" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="0a8704f5-9bfd-4a9e-88b1-470a607e321e" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

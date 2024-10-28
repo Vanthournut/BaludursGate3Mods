@@ -150,6 +150,7 @@ data "StackType" "Overwrite"
 data "RemoveConditions" ""
 data "StatusPropertyFlags" "TickingWithSource;DisableOverhead;DisableCombatlog"
 data "IsUnique" "1"
+data "StatusEffect" "f6e723a4-4eb3-4ce7-be71-542e5c9b27da"
 
 new entry "ELEMENTAL_CLEAVER_ACID_WEAPON"
 type "StatusData"
