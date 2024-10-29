@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="ab245cbf-4a80-41d4-8f30-f933b89f6a14" OwnerUUID="333816d8-bd4e-4524-aff7-f2e3ee6ca03f" Name="ELEMENTAL_CLEAVER_COLD_StatusEffect">
+  <EffectInfo UUID="715b1525-8af7-4e3a-aab8-8e2f9c53e8d9" EffectResourceGuid="aef90123-991b-fbe2-7627-e22da85858b7" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceBone="_Weapon" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

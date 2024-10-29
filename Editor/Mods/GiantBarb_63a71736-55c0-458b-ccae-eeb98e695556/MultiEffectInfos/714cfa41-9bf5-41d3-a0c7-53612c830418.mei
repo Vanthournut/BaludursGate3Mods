@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="714cfa41-9bf5-41d3-a0c7-53612c830418" OwnerUUID="333816d8-bd4e-4524-aff7-f2e3ee6ca03f" Name="ELEMENTAL_CLEAVER_THUNDER_StatusEffect">
+  <EffectInfo UUID="b453099e-01c5-4aa3-9029-72a316a4cba7" EffectResourceGuid="8650b701-8e38-debe-3640-18e365ff6717" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceBone="_Weapon" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

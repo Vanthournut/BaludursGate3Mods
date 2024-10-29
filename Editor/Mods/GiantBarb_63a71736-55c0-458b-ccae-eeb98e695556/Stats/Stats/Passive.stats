@@ -27,11 +27,12 @@
     <stat_object is_substat="false">
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="3e00898d-a0b1-448a-b911-f29969f1d368" />
-        <field name="Name" type="NameTableFieldDefinition" value="Rage_Giants_Havoc_Reach" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9eeae801g96begcb49gc17cg1a931021b712" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91f7555cg7b86gfebdgf307g0c7a29afea8e" version="1" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());" />
+        <field name="Name" type="NameTableFieldDefinition" value="Rage_Giants_Havoc_Boosts" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9eeae801g96begcb49gc17cg1a931021b712" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91f7555cg7b86gfebdgf307g0c7a29afea8e" version="3" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5); DealDamage(LevelMapValue(RageDamage));" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -40,7 +41,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ElementalCleaverUnlock" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Rage_GiantsHavoc_Container);UnlockSpell(Shout_Elemental_Cleaver);" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fc8258d-0e36-41c6-a1e4-606e95ecc68c" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -50,6 +51,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCast" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Throw_Throw')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THROWING_TECHNICAL,100,1);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -63,6 +65,7 @@
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="Conditions" type="StringTableFieldDefinition" value="SpellId('Throw_Throw')" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THROWING_TECHNICAL,100,1);" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -105,7 +108,7 @@
       <fields>
         <field name="UUID" type="IdTableFieldDefinition" value="9b50f268-d4f1-4b15-bfa3-42d5ceca8f3f" />
         <field name="Name" type="NameTableFieldDefinition" value="MightyImpelUnlock" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Throw_Mighty_Impel)" />
       </fields>
     </stat_object>
@@ -116,7 +119,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hdfc9cb9cged5eg4159g7881g6a789fb27533" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h400197eeg2460g4c33g0bd5ga159af3740af" version="2" />
         <field name="Icon" type="StringTableFieldDefinition" value="Action_Throw" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
         <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnDamaged;OnDamagedPrevented" enumeration_type_name="StatsFunctorContext" version="1" />
         <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(MIGHTY_IMPEL_DAMAGE_NEGATION);" />
       </fields>

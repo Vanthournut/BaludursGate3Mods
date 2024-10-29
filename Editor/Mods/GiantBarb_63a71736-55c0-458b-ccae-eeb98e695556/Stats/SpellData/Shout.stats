@@ -146,7 +146,7 @@
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha82a3063g31b4g3facga5d7g06aa056acc09" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h596f9b97g0884g4b59gdd5bgcd229afb4c72" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h596f9b97g0884g4b59gdd5bgcd229afb4c72" version="2" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_FIRE_WEAPON,100,10);" />
@@ -155,7 +155,9 @@
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
-        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_FIRE_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -185,6 +187,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="dfb57578-dafa-4c39-9f6e-238b9e2c237d" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="89018ece-411e-4c00-94ec-6cb3743f4af5" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_ACID_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -204,6 +207,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="43efb4cc-023f-43c6-91a1-9383d754f31a" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="37848e95-b5cb-4184-a3c2-33780787694d" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_COLD_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -223,6 +227,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="bfeec9c4-0287-4a24-a104-b2ae38d85b4f" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="5e3997ae-d2f5-4b97-96e3-c987e6b9584d" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_THUNDER_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -242,6 +247,7 @@
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="da768bec-1f51-4d6f-8617-a3a6c2c01a58" />
         <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="7547b944-e3e5-4b6d-b2e9-8320425b4f12" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_LIGHTNING_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
       </fields>
     </stat_object>
   </stat_objects>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="1530999f-0038-4a9d-b33c-50ad5bb0a3d9" OwnerUUID="333816d8-bd4e-4524-aff7-f2e3ee6ca03f" Name="ELEMENTAL_CLEAVER_LIGHTNING_StatusEffect">
+  <EffectInfo UUID="fdd57803-eb81-4657-9070-6f6bd7a86360" EffectResourceGuid="a18b5c91-f726-d614-098b-87ca473accac" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceBone="_Weapon" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

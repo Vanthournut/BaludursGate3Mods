@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="aa9fb726-8594-42ff-82a5-fcdaff49e911" OwnerUUID="333816d8-bd4e-4524-aff7-f2e3ee6ca03f" Name="ELEMENTAL_CLEAVER_ACID_StatusEffect">
+  <EffectInfo UUID="655632c3-50ba-4094-9e32-73b4e44379ae" EffectResourceGuid="4916f192-3ef3-6237-142f-7a67420b1399" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="false" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" SourceBone="_Weapon" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>
