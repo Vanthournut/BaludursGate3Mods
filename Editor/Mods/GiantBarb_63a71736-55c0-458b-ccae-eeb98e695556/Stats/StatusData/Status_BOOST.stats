@@ -8,7 +8,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="7d59e4d4-3a92-46c5-bccb-581f20cfae78" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1df61562gf0abgc5e8gf731g1a7d81a5ab3d" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7e883448g828dge31cg54d1g59ea58cccc34" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Goodberry" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Druidcraft" />
         <field name="StackId" type="StringTableFieldDefinition" value="DRUIDCRAFT" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Advantage(Skill, AnimalHandling);Advantage(Skill, Survival)" />
       </fields>
@@ -23,8 +23,8 @@
         <field name="Passives" type="StringTableFieldDefinition" value="Rage_Rage_Boosts;Rage_Attack;Rage_Damaged;Rage_NoHeavyArmour_VFX;Rage_Giants_Havoc_Boosts;" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasHeavyArmor(context.Source)):ApplyStatus(RAGE_FRENZY_NO_HEAVY_ARMOUR_VFX,100,10);ApplyStatus(RAGE_STOP_REMOVE,100,1);ApplyStatus(RAGE_GIANT_ENLARGE,100,10);IF(HasStatus('RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL') and not HasStatus('SG_Polymorph')):ApplyStatus(RAGE_GIANT_ENLARGE_SMALL_RACE,100,10);BreakConcentration()" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(RAGE_GIANT_ENLARGE);RemoveStatus(RAGE_GIANT_ENLARGE_SMALL_RACE);RemoveStatus(RAGE_MUTE);RemoveStatus(RAGE_STOP_REMOVE);RemoveStatus(RAGE_FRENZY_NO_HEAVY_ARMOUR_VFX);RemoveStatus(RAGE_FRENZY_BURNOUT);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(RAGE_ENDED,100,1);IF(RemoveCause(StatusRemoveCause.TimeOut) or RemoveCause(StatusRemoveCause.Condition)):UseSpell(Shout_EndRage,true,true,true)" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0f053301g9577g7600ga860gdcc0c414fdb0" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h4160bd44g83e2gef98g8d11ga8a7d3acb44e" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
         <field name="Boosts" type="StringTableFieldDefinition" value="Tag(VFX_RAGE);BlockSpellCast();UnlockSpell(Shout_EndRage);Attribute(ForceMainhandAlternativeEquipBones);" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="UnavailableInActiveRoll" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
@@ -36,9 +36,9 @@
         <field name="StackId" type="StringTableFieldDefinition" value="RAGE_GIANT_ENLARGE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25)" />
         <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge;" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1cf542g6df8ga61fg442bgee50244540ae" version="2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2f1cf542g6df8ga61fg442bgee50244540ae" version="3" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Rage;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Reduce" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
       </fields>
@@ -48,9 +48,9 @@
         <field name="UUID" type="IdTableFieldDefinition" value="c1fcebc4-5325-4b09-97eb-5ebba80afe4a" />
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_GIANT_ENLARGE_SMALL_RACE" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="348825a9-111f-4502-980a-77bb7b075da9" />
-        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebed854egc920g17f9g5553g7345bec2ca26" version="2" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb3a1f61gd8d8gf46cg37aeg6850289168df" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Reduce" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hebed854egc920g17f9g5553g7345bec2ca26" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hdb3a1f61gd8d8gf46cg37aeg6850289168df" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="StackId" type="StringTableFieldDefinition" value="RAGE_GIANT_ENLARGE_SMALL_RACE" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25)" />
         <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge;" />
@@ -64,7 +64,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2a90cc03ged6bg7268g5bf9gb577588fc2c0" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h64a25e9fg4490gb7b1g4616g9bded4e4838f" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Reduce" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="StackId" type="StringTableFieldDefinition" value="RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog;ApplyToDead;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
@@ -88,7 +88,7 @@
         <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_CLEAVER_OWNER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha517413bg09c7g8023gf67bg75153aafe8af" version="1" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaver" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnEquip;OnCombatEnded;OnUnequip;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ELEMENTAL_CLEAVER_FIRE_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_ACID_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_COLD_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER);ApplyStatus(ELEMENTAL_CLEAVER_WEAPON_TECHNICAL,100,0)" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Throwing_Technical" />
@@ -102,7 +102,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_FIRE_OWNER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb0e7721ag978cg7b9dg486fg1ac92a5db94f" version="2" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbdb097abg28ccg880cged7dg2490214a83e9" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverFire" />
         <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_CLEAVER_TYPE" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Fire" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
@@ -118,7 +118,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_ACID_OWNER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="382adb86-9e03-4bda-9bad-555609ef7ee9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h169cb244g44e6g48deg9f78ga6d029e6a45a" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverAcid" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Acid" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_ACID_WEAPON,100,0)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))):ApplyEquipmentStatus(MainHand,ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))):ApplyEquipmentStatus(OffHand,ELEMENTAL_CLEAVER_ACID_WEAPON,100,10);" />
@@ -131,7 +131,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_COLD_OWNER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="382adb86-9e03-4bda-9bad-555609ef7ee9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9b4b5c1cgde68g1835g68a1ga47aa06da500" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverCold" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Cold" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_COLD_WEAPON,100,0)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))):ApplyEquipmentStatus(MainHand,ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))):ApplyEquipmentStatus(OffHand,ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
@@ -144,7 +144,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_THUNDER_OWNER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="382adb86-9e03-4bda-9bad-555609ef7ee9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc160e967gb6afg7c10gbc34g800097863f43" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverThunder" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Thunder" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,0)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))):ApplyEquipmentStatus(MainHand,ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))):ApplyEquipmentStatus(OffHand,ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
@@ -157,7 +157,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_LIGHTNING_OWNER" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="382adb86-9e03-4bda-9bad-555609ef7ee9" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5894965eg0e83g2c9dg3cdbg8c71b6fe2d71" version="2" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverLightning" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Lightning" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,0)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))):ApplyEquipmentStatus(MainHand,ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))):ApplyEquipmentStatus(OffHand,ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
@@ -169,7 +169,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="2c687a59-39ab-4d21-bc56-2082e8f07574" />
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_WEAPON_TECHNICAL" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he94fee84gfa20ge24age072gb62e3d2d7fb7" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaver" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="Boosts" type="StringTableFieldDefinition" value="ItemReturnToOwner();WeaponProperty(Thrown);" />
@@ -184,7 +184,7 @@
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Fire)" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0a398cf8g9198g1ab3g7cb5g7d21d24e5ef9" version="3" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverFire" />
         <field name="IsUnique" type="BoolTableFieldDefinition" value="True" />
         <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -197,7 +197,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_ACID_WEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dc1dcdc-efe2-4e8c-927c-6f6f845fec99" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Acid)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverAcid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hf20f8999g7701ge206g71degdf865888f9d0" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="aa9fb726-8594-42ff-82a5-fcdaff49e911" />
       </fields>
@@ -208,7 +208,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_COLD_WEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dc1dcdc-efe2-4e8c-927c-6f6f845fec99" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Cold)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverCold" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha372ac62gced5g0d38ge5e5g14720d0aa679" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="ab245cbf-4a80-41d4-8f30-f933b89f6a14" />
       </fields>
@@ -219,7 +219,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_THUNDER_WEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dc1dcdc-efe2-4e8c-927c-6f6f845fec99" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Thunder)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverThunder" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h3ffbc66eg6886g5486g0e2fg06f99fd7a2ba" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="714cfa41-9bf5-41d3-a0c7-53612c830418" />
       </fields>
@@ -230,7 +230,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_LIGHTNING_WEAPON" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="8dc1dcdc-efe2-4e8c-927c-6f6f845fec99" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d6,Lightning)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverLightning" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5b5d717fgd769ga817g8f6ag278b59cbbd69" version="1" />
         <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="1530999f-0038-4a9d-b33c-50ad5bb0a3d9" />
       </fields>
@@ -241,7 +241,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="MIGHTY_IMPEL_DAMAGE_NEGATION" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha97c6330g5500g1562g7748g47dd70a75e93" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h61d1ab3bg4f4bgfc73g5d51gf9fdafad9e6f" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Throw" />
+        <field name="Icon" type="StringTableFieldDefinition" value="MightyImpel" />
         <field name="Boosts" type="StringTableFieldDefinition" value="DamageReduction(All, Flat, 999);" />
         <field name="Passives" type="StringTableFieldDefinition" value="MightyImpelDamageNegation" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
@@ -252,7 +252,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="caa726a2-34e7-4479-97f3-787a03eda381" />
         <field name="Name" type="NameTableFieldDefinition" value="DEMIURGIC_COLOSSUS" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c1fcebc4-5325-4b09-97eb-5ebba80afe4a" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0af3316ag88bbg3a4fg1bccg629dad97bc7d" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h0af3316ag88bbg3a4fg1bccg629dad97bc7d" version="3" />
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="OnApplyConditions" type="StringTableFieldDefinition" value="not HasStatus('DEMIURGIC_COLOSSUS')" />
         <field name="StackId" type="StringTableFieldDefinition" value="DEMIURGIC_COLOSSUS" />
@@ -263,7 +263,7 @@
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h12643f32gcf4dgb0b6g2107g51df42961189" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);DealDamage(1d6);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);" />
       </fields>
     </stat_object>
   </stat_objects>

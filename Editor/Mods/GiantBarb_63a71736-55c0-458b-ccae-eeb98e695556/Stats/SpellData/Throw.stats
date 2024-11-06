@@ -14,7 +14,7 @@
         <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" value="SpellAutoResolveOnAlly(Ability.Strength, SourceSpellDC(10, context.Source, Ability.Strength), true)" />
         <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(not Ally()):ApplyStatus(PRONE,100,1);ApplyStatus(MIGHTY_IMPEL_DAMAGE_NEGATION,100,1);" />
         <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not Grounded() and (Character() or Dead()) and CanMove(context.Target, context.Source, false) and not Tagged('CANT_SHOVE_THROW') and not SizeEqualOrGreater(context.Source.Size)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Action_Barbarian_FrenziedThrow" />
+        <field name="Icon" type="StringTableFieldDefinition" value="MightyImpel" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h442771a6ga653g139cgff4cg3453b64b0251" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe853ee2g6821g5a55g55ecg4e179b8d10b8" version="1" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />

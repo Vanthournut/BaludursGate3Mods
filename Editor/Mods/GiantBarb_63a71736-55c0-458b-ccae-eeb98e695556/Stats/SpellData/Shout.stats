@@ -7,7 +7,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Druidcraft" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="e557c52b-a468-4a6e-87c3-cc981f5605e6" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(DRUIDCRAFT,100,10)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Goodberry" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Druidcraft" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h92a198c3g2f4cg5332g08b1g5e33361b57d1" version="1" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha588345dg509fge9c1g30f8gee5e703c3085" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(DRUIDCRAFT,100,10)" />
@@ -21,7 +21,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h35d10908gf602ga4e5gd74dg4ec1314a96fa" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10)" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1)" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('CALM_EMOTIONS')" />
         <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="f6ebf162-0ad6-4378-a6ba-a00aff45e0be" />
         <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="d314aed0-4fb5-44dc-98c4-614297017694" />
@@ -34,7 +34,7 @@
         <field name="Using" type="BaseClassTableFieldDefinition" value="5781ec85-5505-4a3b-8914-956fa376d015" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" value="Shout_Rage_GiantsHavoc_Fire;Shout_Rage_GiantsHavoc_Acid;Shout_Rage_GiantsHavoc_Cold;Shout_Rage_GiantsHavoc_Thunder;Shout_Rage_GiantsHavoc_Lightning;" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc5e7dc93g03d0gf20dg58cag12ea7bf992d4" version="2" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="Requirements" type="StringTableFieldDefinition" value="Combat" />
@@ -50,7 +50,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Rage_GiantsHavoc_Container" />
         <field name="ContainerSpells" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverFire" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h0cddb368gbe4fg7bd3gf470gc87737602958" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_FIRE_OWNER,100,10);" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
@@ -66,7 +66,7 @@
         <field name="UUID" type="IdTableFieldDefinition" value="eb8c7fbd-a0ad-4747-807b-f1a9c384c69e" />
         <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Acid" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverAcid&#xD;&#xA;" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8629f404g6b61gc4b3gac06g62a8ff101ccb" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Acid" enumeration_type_name="Damage Type" version="1" />
@@ -81,7 +81,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverCold" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hc9549747gbbe8gc778g3765ga0cbfc9dafe9" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Cold" enumeration_type_name="Damage Type" version="1" />
@@ -95,7 +95,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverThunder" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6aa2535egf7dcg2157g27dfg177404e1cd60" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Thunder" enumeration_type_name="Damage Type" version="1" />
@@ -109,7 +109,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Rage_GiantsHavoc_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="979afee8-cbbc-4dc5-be2c-fef988958bec" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="AI_IGNORE:ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(RAGE_MUTE,100,10);AI_ONLY:IF(HasActionResource('ActionPoint', 1, 0, false)):ApplyStatus(AI_HELPER_RAGE,100,1);ApplyStatus(ELEMENTAL_CLEAVER_OWNER,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverLightning" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd20b7104g42e4ge1a3g0499g3736c3929535" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(RAGE_GIANTS_HAVOC,100,10);ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="Lightning" enumeration_type_name="Damage Type" version="1" />
@@ -131,7 +131,7 @@
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsLinkedSpellContainer" enumeration_type_name="SpellFlagList" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaver" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
       </fields>
     </stat_object>
@@ -153,7 +153,7 @@
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
         <field name="SpellFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellFlagList" version="1" />
         <field name="SpellPrepareCost" type="IntegerTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Fire" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverFire" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC') and not HasStatus('ELEMENTAL_CLEAVER_FIRE_OWNER') and (HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand)) or HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand)))" />
         <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
@@ -170,7 +170,7 @@
         <field name="SpellContainerID" type="StringTableFieldDefinition" value="Shout_Elemental_Cleaver" />
         <field name="Cooldown" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="CooldownType" version="1" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_ACID_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Acid" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverAcid" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hedc1c85dg53a0g148bgb93egc384e61affbd" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
@@ -196,7 +196,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Cold" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Cold" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverCold" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha4434067g904dga47cgb43dgc10380420d1d" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_COLD_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_COLD_WEAPON,100,10);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Cold" />
@@ -216,7 +216,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Thunder" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Thunder" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverThunder" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he7e15dd8g37d0g1763gad7cgb9014d493efc" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_THUNDER_WEAPON,100,10);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Thunder" />
@@ -236,7 +236,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="Elemental_Cleaver_Lightning" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4d8aedd4-83ee-4a23-9c39-2883c82eefc5" />
         <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);" />
-        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_ElementalWeapon_Lightning" />
+        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverLightning" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h7d079ceagb5cag7e6egbd8aga58c2a1d13c6" version="1" />
         <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER,100,10);ApplyEquipmentStatus(MainHand, ELEMENTAL_CLEAVER_LIGHTNING_WEAPON,100,10);" />
         <field name="PrepareSound" type="StringTableFieldDefinition" value="Action_Prepare_Item_ChromaticAttunement_Lighting" />
