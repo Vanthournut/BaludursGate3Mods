@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="ConditionErrors">
+        <node id="root">
+            <children>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="h77b1dd57gec0ag81feg4dd5gba109889553d" version="1"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Status_ELEMENTAL_CLEAVER_WEAPON_TECHNICAL_False"/>
+                    <attribute id="UUID" type="guid" value="b43e7ceb-7b1c-43c3-ac0c-79bafc6bb953"/>
+                </node>
+                <node id="ConditionErrors">
+                    <attribute id="DisplayName" type="TranslatedString" handle="hfb5d1df1gd330g479cgd7b8ga2f40ca04ad5" version="2"/>
+                    <attribute id="ErrorDescriptionType" type="uint8" value="0"/>
+                    <attribute id="Identifier" type="FixedString" value="CE_Status_RAGE_GIANTS_HAVOC_False"/>
+                    <attribute id="UUID" type="guid" value="230dad2a-89f1-4f37-b6d4-3eccdf599c75"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>
