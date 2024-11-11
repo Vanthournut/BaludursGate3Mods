@@ -7,22 +7,37 @@
         <field name="Name" type="NameTableFieldDefinition" value="Mighty_Impel" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="5cce39b4-8be9-46d3-86b3-ed1fa836d336" />
         <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
-        <field name="SpellProperties" type="StringTableFieldDefinition" value="TARGET:DealDamage(0,Bludgeoning);" />
-        <field name="SpellRoll" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="GROUND:DealDamage(0,Bludgeoning);TARGET:DealDamage(0,Bludgeoning);" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="SpellAutoResolveOnAlly(Ability.Strength, SourceSpellDC(10,context.Source,Ability.Strength), true) or Dead()" />
         <field name="SpellSuccess" type="StringTableFieldDefinition" value="TARGET:DealDamage(0,Bludgeoning);" />
         <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Character()" />
-        <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" value="SpellAutoResolveOnAlly(Ability.Strength, SourceSpellDC(10, context.Source, Ability.Strength), true)" />
-        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(not Ally()):ApplyStatus(PRONE,100,1);ApplyStatus(MIGHTY_IMPEL_DAMAGE_NEGATION,100,1);" />
-        <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not Grounded() and (Character() or Dead()) and CanMove(context.Target, context.Source, false) and not Tagged('CANT_SHOVE_THROW') and not SizeEqualOrGreater(context.Source.Size)" />
+        <field name="ThrowableSpellRoll" type="StringTableFieldDefinition" value="SpellAutoResolveOnAlly(Ability.Strength, SourceSpellDC(10,context.Source,Ability.Strength), true) or Dead()" />
+        <field name="ThrowableSpellSuccess" type="StringTableFieldDefinition" value="IF(not Ally()):ApplyStatus(PRONE_AFTER_THROW,100,1);IF(Ally()):ApplyStatus(MIGHTY_IMPEL_DAMAGE_NEGATION,100,1);" />
+        <field name="ThrowableTargetConditions" type="StringTableFieldDefinition" value="not Grounded() and (Character() or Dead()) and not Tagged('CANT_SHOVE_THROW') and not SizeEqualOrGreater(context.Source.Size)" />
         <field name="Icon" type="StringTableFieldDefinition" value="MightyImpel" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h442771a6ga653g139cgff4cg3453b64b0251" version="1" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe853ee2g6821g5a55g55ecg4e179b8d10b8" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfe853ee2g6821g5a55g55ecg4e179b8d10b8" version="2" />
         <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1" />
-        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;HasHighGroundRangeExtension;IgnoreSilence;IgnoreVisionBlock;AddFallDamageOnLand;AbortOnSecondarySpellRollFail" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="RangeIgnoreVerticalThreshold;IsHarmful;HasHighGroundRangeExtension;IgnoreVisionBlock;AddFallDamageOnLand;AbortOnSecondarySpellRollFail;AbortOnSpellRollFail" enumeration_type_name="SpellFlagList" version="1" />
         <field name="DamageType" type="EnumerationTableFieldDefinition" value="None" enumeration_type_name="Damage Type" version="1" />
         <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
         <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="SpellActionType" type="EnumerationTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="SpellActionType" version="1" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="303613ea-3e91-4d11-ac62-bfc6174b6379" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="ShortDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ShortDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipOnMiss" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipOnSave" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
         <field name="RequirementConditions" type="StringTableFieldDefinition" value="HasStatus('RAGE_GIANTS_HAVOC')" />
+        <field name="TooltipSpellDCAbilities" type="EnumerationListTableFieldDefinition" value="Strength" enumeration_type_name="AbilityFlags" version="1" />
       </fields>
     </stat_object>
   </stat_objects>

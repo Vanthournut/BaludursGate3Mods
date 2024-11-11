@@ -12,6 +12,9 @@
         <field name="Conditions" type="StringTableFieldDefinition" value="not SizeEqualOrGreater(Size.Medium,context.Source) and not HasStatus('REDUCE',context.Source) and not HasStatus('SG_Polymorph',context.Source) and not HasStatus('RAGE_GIANT_ENLARGE_SMALL_RACE_TECHNICAL',context.Source)" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted;None" enumeration_type_name="PassiveFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h68025bdbg7ad6g15efg5787g153ac6e70b78" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="ha8826230gf243g05d1g4ee5gc095fbdfeb27" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5); LevelMapValue(RageDamage);" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -32,8 +35,10 @@
         <field name="Name" type="NameTableFieldDefinition" value="ElementalCleaverUnlock" />
         <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Shout_Rage_GiantsHavoc_Container);UnlockSpell(Shout_Elemental_Cleaver);" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="4fc8258d-0e36-41c6-a1e4-606e95ecc68c" />
-        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaver" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="None;Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hd4bbfcecgc777g0221g57e6g027efba9a365" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h517c13d7gbebagb3cege6ebg77520e2a2cfc" version="1" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c045520a-c4bc-4b3a-a5d8-61667e0a1cc4">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_134" />
+        <field name="UUID" type="IdTableFieldDefinition" value="230dad2a-89f1-4f37-b6d4-3eccdf599c75" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_RAGE_GIANTS_HAVOC_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfb5d1df1gd330g479cgd7b8ga2f40ca04ad5" version="2" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="b43e7ceb-7b1c-43c3-ac0c-79bafc6bb953" />
+        <field name="Identifier" type="FixedStringTableFieldDefinition" value="CE_Status_ELEMENTAL_CLEAVER_WEAPON_TECHNICAL_False" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h77b1dd57gec0ag81feg4dd5gba109889553d" version="1" />
+        <field name="ErrorDescriptionType" type="EnumerationTableFieldDefinition" value="ErrorName" enumeration_type_name="ErrorDescriptionType" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
