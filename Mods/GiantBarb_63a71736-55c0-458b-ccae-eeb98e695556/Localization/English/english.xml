@@ -68,7 +68,7 @@
   <content contentuid="h864c09e7gb699ge0b4gcf8ag880790025cb3" version="1">Yeet smaller people</content>
   <content contentuid="h0af3316ag88bbg3a4fg1bccg629dad97bc7d" version="3">Increase your reach by an additional [1] and your Elemental Cleaver deals an additional 1d6 damage of the chosen type.</content>
   <content contentuid="hdff3339eg1467g62b8g7ff0gd0453fc16cd5" version="1">Demiurgic Colossus</content>
-  <content contentuid="h43dc09b0gf65bg3139g0d27g32a2b82eb0e9" version="2">Crown of the Demiurge</content>
+  <content contentuid="h43dc09b0gf65bg3139g0d27g32a2b82eb0e9" version="31">Crown of the Demiurge</content>
   <content contentuid="h12643f32gcf4dgb0b6g2107g51df42961189" version="1">Demiurgic Colossus</content>
   <content contentuid="he5d03ae0g2c36gf85bg00c8gffee6fc84aff" version="2">Increase your reach by an additional [1] and your Elemental Cleaver deals an additional 1d6 damage of the chosen type.</content>
   <content contentuid="h4160bd44g83e2gef98g8d11ga8a7d3acb44e" version="4">Deals an additional [1] damage with melee and improvised weapons, and when throwing objects.&lt;br&gt;&lt;br&gt;Reach increased by [2].&lt;br&gt;&lt;br&gt;Size increased to Large.&lt;br&gt;&lt;br&gt;Melee and Thrown Weapon attacks deal an additional [1] damage.&lt;br&gt;&lt;br&gt;Also has Resistance to physical damage, and Advantage on Strength &lt;LSTag Tooltip="AbilityCheck"&gt;Checks&lt;/LSTag&gt; and &lt;LSTag Tooltip="SavingThrow"&gt;Saving Throws&lt;/LSTag&gt;.&lt;br&gt;&lt;br&gt;Cannot cast or concentrate on spells.</content>
@@ -97,4 +97,9 @@
   <content contentuid="hfadf57d1g51d3g5c21g3097g260ebb7e415f" version="2">Your weapon gains the &lt;LSTag Tooltip="Thrown"&gt;Thrown&lt;/LSTag&gt; property and returns to you when thrown.&lt;br&gt;You grow to Large, your reach increases by [1], and you deal an additional [2] damage with melee attacks and thrown weapon attacks.</content>
   <content contentuid="ha2508a20gd82agcf6dga6a9g23b75ae942b3" version="1">Enter a &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt; that gives you the primordial energy of a giant.</content>
   <content contentuid="h42f78c64gd677g411cg33b1gcc67363e205f" version="1">Enter a &lt;LSTag Type="Status" Tooltip="RAGE"&gt;Rage&lt;/LSTag&gt; that gives you the primordial energy of a giant.</content>
+  <content contentuid="h188d73dag2f23gd4a1ga404g338c55e2bde4" version="2">Demiurgic Colossus</content>
+  <content contentuid="hc8e63d5egeddfgf3cag08a4g9677e9067785" version="2">While empowered by &lt;LSTag Type="Status" Tooltip="RAGE_GIANTS_HAVOC"&gt;Giant's Havoc&lt;/LSTag&gt; you grow to be Huge, increase your reach by an additional [1] and your Elemental Cleaver deals an additional 1d6 damage of the chosen type.</content>
+  <content contentuid="h9f886decgd57dg7ff3gf501gd9986858d302" version="1">It is said that Annam himself crafted this crown of mithral plated dragon bones during the Thousand-Year War. Though likely to be the work of a skilled dwarf in honour of the legend, primordial power can be felt by anyone who wears it.</content>
+  <content contentuid="h8be5444agdc58gdd08g7872g605bf5cd77fa" version="1">Giant</content>
+  <content contentuid="h6c336e56ge7b9g5a8fg791dg34a9ccbd3622" version="1">Barbarians who walk the Path of the Giant draw strength from the same primal forces as giants. As they rage, these barbarians surge with elemental power and grow in size, taking on forms that evoke the glory of giants.</content>
 </contentList>

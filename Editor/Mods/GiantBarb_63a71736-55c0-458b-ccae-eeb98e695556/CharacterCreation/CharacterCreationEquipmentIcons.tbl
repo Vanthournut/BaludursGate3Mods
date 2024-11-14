@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bbb4bfcc-9437-489b-a489-b88bd973e0cb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="fe529c3d-0f60-4c4e-b944-3d3dbf983161" />
+        <field name="RootTemplate" type="GuidTableFieldDefinition" value="75a43caa-175d-446f-a879-77bb3697070c" />
+        <field name="EquipmentTemplate" type="GuidTableFieldDefinition" value="2f77478a-7dbb-40e3-b4d7-dc5c40a570aa" />
+        <field name="SlotName" type="EnumerationTableFieldDefinition" value="Headwear" enumeration_type_name="EquipmentIconCameraNames" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

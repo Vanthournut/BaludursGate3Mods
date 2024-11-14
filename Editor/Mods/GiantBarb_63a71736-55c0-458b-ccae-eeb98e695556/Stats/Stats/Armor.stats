@@ -7,9 +7,11 @@
         <field name="Name" type="NameTableFieldDefinition" value="MAG_Barb_Giant_Crown" />
         <field name="Using" type="BaseClassTableFieldDefinition" value="c97fc033-e444-4ce0-a156-1b2065fda7a5" />
         <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="2f77478a-7dbb-40e3-b4d7-dc5c40a570aa" />
-        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
         <field name="ValueUUID" type="GuidObjectTableFieldDefinition" value="c5ad02e9-b4d4-4df1-a9cd-02b80d017eaa" />
         <field name="PassivesOnEquip" type="StringTableFieldDefinition" value="DemiurgicColossusUnlock" />
+        <field name="ValueLevel" type="IntegerTableFieldDefinition" value="12" />
+        <field name="Rarity" type="EnumerationTableFieldDefinition" value="VeryRare" enumeration_type_name="Rarity" version="1" />
+        <field name="ValueScale" type="FloatTableFieldDefinition" value="0.3" />
       </fields>
     </stat_object>
   </stat_objects>

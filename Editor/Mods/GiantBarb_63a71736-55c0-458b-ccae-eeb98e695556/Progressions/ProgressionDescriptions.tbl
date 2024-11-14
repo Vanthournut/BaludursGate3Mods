@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bfa22a59-fd65-4e35-ae0f-ac960c3b5fd2">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_0" />
+        <field name="UUID" type="IdTableFieldDefinition" value="a6b6dc64-500a-44b4-ba58-c703975430ce" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h8be5444agdc58gdd08g7872g605bf5cd77fa" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h6c336e56ge7b9g5a8fg791dg34a9ccbd3622" version="1" />
+        <field name="ExactMatch" type="FixedStringTableFieldDefinition" value="GiantPath" />
+        <field name="ProgressionTableId" type="GuidTableFieldDefinition" value="967736f2-1233-4266-951e-e2c3906fc12c" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

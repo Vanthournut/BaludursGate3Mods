@@ -1,0 +1,5 @@
+treasure itemtypes "Common","Uncommon","Rare","Epic","Legendary","Divine","Unique"
+new treasuretable "LOW_SteepsTrader_Armor"
+CanMerge 1
+new subtable "-1"
+object category "I_MAG_Barb_Giant_Crown",1,0,0,0,0,0,0,0

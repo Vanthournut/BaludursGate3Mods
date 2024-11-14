@@ -17,7 +17,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="DiceSet_01"/>
-                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="MD5" type="LSString" value="8edd9729dcdbcafdbba0770834bdd323"/>
                             <attribute id="Name" type="LSString" value="DiceSet_01"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="e842840a-2449-588c-b0c4-22122cfce31b"/>
@@ -25,7 +25,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="DiceSet_02"/>
-                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="MD5" type="LSString" value="9c98eaefccfb3f7cfd6870ff4e84a50d"/>
                             <attribute id="Name" type="LSString" value="DiceSet_02"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="b176a0ac-d79f-ed9d-5a87-5c2c80874e10"/>
@@ -33,7 +33,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="DiceSet_03"/>
-                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="MD5" type="LSString" value="e800e59821eb3090e7e5f25cc478dbd3"/>
                             <attribute id="Name" type="LSString" value="DiceSet_03"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="e0a4d990-7b9b-8fa9-d7c6-04017c6cf5b1"/>
@@ -41,7 +41,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="DiceSet_06"/>
-                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="MD5" type="LSString" value="4a53b4f61b1667007e21c661309b7435"/>
                             <attribute id="Name" type="LSString" value="DiceSet_06"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="ee4989eb-aab8-968f-8674-812ea2f4bfd7"/>
@@ -49,7 +49,7 @@
                         </node>
                         <node id="ModuleShortDesc">
                             <attribute id="Folder" type="LSString" value="MainUI"/>
-                            <attribute id="MD5" type="LSString" value=""/>
+                            <attribute id="MD5" type="LSString" value="d41d8cd98f00b204e9800998ecf8427e"/>
                             <attribute id="Name" type="LSString" value="MainUI"/>
                             <attribute id="PublishHandle" type="uint64" value="0"/>
                             <attribute id="UUID" type="guid" value="630daa32-70f8-3da5-41b9-154fe8410236"/>
@@ -82,13 +82,13 @@
                     </children>
                 </node>
                 <node id="ModuleInfo">
-                    <attribute id="Author" type="LSString" value="Vandertrout"/>
+                    <attribute id="Author" type="LSString" value="vanthournut"/>
                     <attribute id="CharacterCreationLevelName" type="FixedString" value=""/>
                     <attribute id="Description" type="LSString" value="A mod that implements the 5e Path of the Giant barbarian subclass."/>
-                    <attribute id="FileSize" type="uint64" value="0"/>
+                    <attribute id="FileSize" type="uint64" value="18375677"/>
                     <attribute id="Folder" type="LSString" value="GiantBarb_63a71736-55c0-458b-ccae-eeb98e695556"/>
                     <attribute id="LobbyLevelName" type="FixedString" value=""/>
-                    <attribute id="MD5" type="LSString" value="e26a647e87d352861bdc31db852313b1"/>
+                    <attribute id="MD5" type="LSString" value="ef3697cb4b1f646f546d0cdc2241bb5e"/>
                     <attribute id="MenuLevelName" type="FixedString" value=""/>
                     <attribute id="Name" type="LSString" value="GiantBarbarian"/>
                     <attribute id="NumPlayers" type="uint8" value="4"/>
@@ -96,7 +96,7 @@
                     <attribute id="PublishHandle" type="uint64" value="0"/>
                     <attribute id="StartupLevelName" type="FixedString" value=""/>
                     <attribute id="UUID" type="FixedString" value="63a71736-55c0-458b-ccae-eeb98e695556"/>
-                    <attribute id="Version64" type="int64" value="36028797018963969"/>
+                    <attribute id="Version64" type="int64" value="36028797018963972"/>
                     <children>
                         <node id="PublishVersion">
                             <attribute id="Version64" type="int64" value="144255927717549775"/>

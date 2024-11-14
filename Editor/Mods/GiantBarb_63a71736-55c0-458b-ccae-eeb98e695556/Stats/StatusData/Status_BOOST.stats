@@ -88,7 +88,7 @@
         <field name="Name" type="NameTableFieldDefinition" value="ELEMENTAL_CLEAVER_OWNER" />
         <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_CLEAVER_OWNER" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha517413bg09c7g8023gf67bg75153aafe8af" version="1" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL') and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
         <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaver" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnEquip;OnCombatEnded;OnUnequip;OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(ELEMENTAL_CLEAVER_FIRE_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_ACID_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_COLD_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_THUNDER_OWNER);RemoveStatus(ELEMENTAL_CLEAVER_LIGHTNING_OWNER);ApplyStatus(ELEMENTAL_CLEAVER_WEAPON_TECHNICAL,100,0)" />
@@ -106,7 +106,7 @@
         <field name="Icon" type="StringTableFieldDefinition" value="ElementalCleaverFire" />
         <field name="StackId" type="StringTableFieldDefinition" value="ELEMENTAL_CLEAVER_TYPE" />
         <field name="Passives" type="StringTableFieldDefinition" value="Elemental_Cleaver_Fire" />
-        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC', context.Source) or (IsStatusEvent(StatusEvent.OnUnequip) and HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL') and not HasStatus('ELEMENTAL_CLEAVER_THROWING_TECHNICAL', GetOwner(context.Source)))" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn;OnEquip;OnCombatEnded;OnUnequip" enumeration_type_name="StatusEvent" version="1" />
         <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(ELEMENTAL_CLEAVER_FIRE_WEAPON,100,0)" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeMainHand))):ApplyEquipmentStatus(MainHand,ELEMENTAL_CLEAVER_FIRE_WEAPON,100,10);IF(HasStatus('ELEMENTAL_CLEAVER_WEAPON_TECHNICAL',GetItemInEquipmentSlot(EquipmentSlot.MeleeOffHand))):ApplyEquipmentStatus(OffHand,ELEMENTAL_CLEAVER_FIRE_WEAPON,100,10);" />
@@ -261,7 +261,7 @@
         <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge;DemiurgicColossusCleaverUpgrade;" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h12643f32gcf4dgb0b6g2107g51df42961189" version="1" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);" />
