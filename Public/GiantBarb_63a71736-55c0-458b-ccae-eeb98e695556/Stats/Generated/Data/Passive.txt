@@ -18,7 +18,7 @@ data "Description" "h91f7555cg7b86gfebdgf307g0c7a29afea8e;5"
 data "DescriptionParams" "Distance(1.5); LevelMapValue(RageDamage);"
 data "Icon" "GiantsHavoc"
 data "Properties" "Highlighted"
-data "Boosts" "UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());IF(not IsAttackType(AttackType.RangedWeaponAttack) and not IsAttackType(AttackType.RangedOffhandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));"
+data "Boosts" "UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyIconGlow());IF(not IsAttackType(AttackType.RangedWeaponAttack) and not IsAttackType(AttackType.RangedOffhandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));"
 
 new entry "ElementalCleaverUnlock"
 type "PassiveData"

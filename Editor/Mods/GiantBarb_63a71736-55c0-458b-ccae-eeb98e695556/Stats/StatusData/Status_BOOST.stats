@@ -41,7 +41,8 @@
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_Rage;SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
         <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" clear_inherited_value="true" value="" />
-        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="LevelMapValue(RageDamage);Distance(1.5)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
@@ -257,14 +258,14 @@
         <field name="Icon" type="StringTableFieldDefinition" value="Spell_Transmutation_Enlarge" />
         <field name="OnApplyConditions" type="StringTableFieldDefinition" value="not HasStatus('DEMIURGIC_COLOSSUS')" />
         <field name="StackId" type="StringTableFieldDefinition" value="DEMIURGIC_COLOSSUS" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Mighty_Impel'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Mighty_Impel'),ModifyAreaRadius(AdditiveBase,1.5),ModifyIconGlow());ObjectSize(+1);ScaleMultiplier(1.33);CarryCapacityMultiplier(1.25)" />
         <field name="Passives" type="StringTableFieldDefinition" value="EnlargeWeightMedium;EnlargeWeightLarge;DemiurgicColossusCleaverUpgrade;" />
         <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="not HasStatus('RAGE_GIANTS_HAVOC')" />
         <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
         <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisablePortraitIndicator;DisableCombatlog;DisableCapabilitiesMessage" enumeration_type_name="StatusPropertyFlags" version="1" />
         <field name="StatusGroups" type="EnumerationListTableFieldDefinition" clear_inherited_value="true" value="" enumeration_type_name="StatusGroupFlags" version="1" />
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h12643f32gcf4dgb0b6g2107g51df42961189" version="1" />
-        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5);" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5)" />
       </fields>
     </stat_object>
   </stat_objects>

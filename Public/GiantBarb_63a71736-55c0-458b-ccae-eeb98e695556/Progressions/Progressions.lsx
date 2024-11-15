@@ -27,7 +27,7 @@
                     <attribute id="PassivesAdded" type="LSString" value="RageGiantsHavocUnlock"/>
                     <attribute id="PassivesRemoved" type="LSString" value="RageUnlock"/>
                     <attribute id="ProgressionType" type="uint8" value="1"/>
-                    <attribute id="Selectors" type="LSString" value="SelectSpells(56552147-38b0-41c5-ba27-89d2025bdb00,1,0,0)"/>
+                    <attribute id="Selectors" type="LSString" value="SelectSpells(56552147-38b0-41c5-ba27-89d2025bdb00,1,0,GiantsPower)"/>
                     <attribute id="TableUUID" type="guid" value="967736f2-1233-4266-951e-e2c3906fc12c"/>
                     <attribute id="UUID" type="guid" value="702fa191-9b45-480d-9846-a0a891b279ce"/>
                 </node>

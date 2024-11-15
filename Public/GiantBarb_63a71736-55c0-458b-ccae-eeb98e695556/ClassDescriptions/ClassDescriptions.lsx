@@ -6,7 +6,7 @@
             <children>
                 <node id="ClassDescription">
                     <attribute id="CharacterCreationPose" type="guid" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8"/>
-                    <attribute id="Description" type="TranslatedString" handle="h856abf49gea6agf175g6c36g63a81e5027be" version="1"/>
+                    <attribute id="Description" type="TranslatedString" handle="h2206357ag15f5g4f0bga317gd493574a1dc3" version="1"/>
                     <attribute id="DisplayName" type="TranslatedString" handle="h12fe3aabgf696g64e4ga545g8fe3fbf16e91" version="1"/>
                     <attribute id="LearningStrategy" type="uint8" value="1"/>
                     <attribute id="Name" type="FixedString" value="GiantPath"/>

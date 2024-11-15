@@ -13,7 +13,7 @@
         <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
         <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
         <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
-        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h856abf49gea6agf175g6c36g63a81e5027be" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h2206357ag15f5g4f0bga317gd493574a1dc3" version="1" />
         <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Barbarian" />
       </fields>
     </stat_object>

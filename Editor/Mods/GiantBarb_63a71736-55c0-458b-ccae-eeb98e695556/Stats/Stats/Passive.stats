@@ -24,7 +24,7 @@
         <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9eeae801g96begcb49gc17cg1a931021b712" version="3" />
         <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h91f7555cg7b86gfebdgf307g0c7a29afea8e" version="5" />
         <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
-        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyTooltipDescription(),ModifyIconGlow());IF(not IsAttackType(AttackType.RangedWeaponAttack) and not IsAttackType(AttackType.RangedOffhandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(ExtraAttackSpellCheck(),ModifyTargetRadius(AdditiveBase,1.5),ModifyIconGlow());UnlockSpellVariant(SpellId('Throw_Throw'),ModifyAreaRadius(AdditiveBase,1.5),ModifyIconGlow());IF(not IsAttackType(AttackType.RangedWeaponAttack) and not IsAttackType(AttackType.RangedOffhandWeaponAttack)):CharacterWeaponDamage(LevelMapValue(RageDamage));CharacterUnarmedDamage(LevelMapValue(RageDamage));" />
         <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(1.5); LevelMapValue(RageDamage);" />
         <field name="Icon" type="StringTableFieldDefinition" value="GiantsHavoc" />
       </fields>

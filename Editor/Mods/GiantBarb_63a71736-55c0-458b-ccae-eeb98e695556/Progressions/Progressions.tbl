@@ -23,7 +23,7 @@
         <field name="ProgressionType" type="ByteTableFieldDefinition" value="1" />
         <field name="PassivesAdded" type="StringTableFieldDefinition" value="RageGiantsHavocUnlock" />
         <field name="PassivesRemoved" type="StringTableFieldDefinition" value="RageUnlock" />
-        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(56552147-38b0-41c5-ba27-89d2025bdb00,1,0,0)" />
+        <field name="Selectors" type="StringTableFieldDefinition" value="SelectSpells(56552147-38b0-41c5-ba27-89d2025bdb00,1,0,GiantsPower)" />
       </fields>
     </stat_object>
     <stat_object is_substat="false">
